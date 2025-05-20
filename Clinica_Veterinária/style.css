@@ -28,7 +28,7 @@ header img {
 
 header h1 {
   margin: 10px 0;
-  color: #4CAF50;
+  color: #66CDAA		;
 }
 
 header p {
@@ -37,7 +37,7 @@ header p {
 
 /* Navegação */
 nav {
-  background-color: #4CAF50;
+  background-color: #66CDAA	;
   padding: 10px 0;
 }
 
@@ -89,13 +89,19 @@ nav a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(76, 175, 80, 0.8);
+  background: #66CDAA;
   color: white;
   border: none;
   font-size: 2rem;
   padding: 10px;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
+
+.carousel button:hover {
+  box-shadow: 0 4px 12px #008080	; /* sombra ao passar o mouse */
+}
+
 
 #prev {
   left: 10px;
@@ -114,7 +120,7 @@ section {
 
 section h2 {
   margin-bottom: 15px;
-  color: #4CAF50;
+  color: #66CDAA	;
 }
 
 /* Lista de serviços */
@@ -124,7 +130,7 @@ section h2 {
 
 #servicos li::before {
   content: '✔️ ';
-  color: #4CAF50;
+  color: #66CDAA		;
 }
 
 /* Equipe */
@@ -169,7 +175,7 @@ form textarea {
 
 form button {
   margin-top: 15px;
-  background-color: #4CAF50;
+  background-color: #66CDAA		;
   color: white;
   border: none;
   padding: 10px;
@@ -179,12 +185,12 @@ form button {
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: #66CDAA		;
 }
 
 /* Rodapé */
 footer {
-  background-color: #4CAF50;
+  background-color: #66CDAA		;
   color: white;
   text-align: center;
   padding: 15px;
@@ -198,7 +204,7 @@ footer {
   right: 30px;
   padding: 10px 15px;
   font-size: 18px;
-  background-color: #4CAF50;
+  background-color: #66CDAA		;
   color: white;
   border: none;
   border-radius: 50%;
@@ -207,5 +213,5 @@ footer {
 }
 
 #btnTopo:hover {
-  background-color: #388E3C;
+  background-color: #66CDAA		;
 }
