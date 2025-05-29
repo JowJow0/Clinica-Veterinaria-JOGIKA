@@ -10,7 +10,7 @@ require 'conexao.php';
     <title>Clínica Veterinária JOGIKA</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    <form action="agendamento.php" method="POST"></head>
 <body>
     <div class="container">
     <div class="esquerda">
@@ -31,7 +31,7 @@ require 'conexao.php';
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#equipe">Equipe</a></li>
-            <li><a href="agendamento.html">Agende uma Consulta</a></li>
+            <li><a href="agendamento.php">Agende uma Consulta</a></li>
         </ul>
     </nav>
 
