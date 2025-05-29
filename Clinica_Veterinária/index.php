@@ -13,7 +13,6 @@ require 'conexao.php';
     <form action="agendamento.php" method="POST"></head>
 <body>
     <div class="container">
-    <div class="esquerda">
       <img src="/Clinica_Veterinária/imagens/JOGIKA.png" alt="Logo Jogika" width="150">
       <p>Cuidando com amor do seu pet!</p>
     </div>

@@ -1,6 +1,7 @@
 <?php
 session_start();
-require 'conexao.php';
+require 'conexao.php'
+require 'processaagendamento.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
