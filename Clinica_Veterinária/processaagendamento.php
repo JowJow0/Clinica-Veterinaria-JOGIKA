@@ -16,13 +16,13 @@ $especie = limpar_dado($conexao, $_POST['especie'] ?? '');
 $raca_porte = limpar_dado($conexao, $_POST['raca_porte'] ?? '');
 $sexo = limpar_dado($conexao, $_POST['sexo'] ?? '');
 $idade_data_nascimento = limpar_dado($conexao, $_POST['idade_data_nascimento'] ?? '');
-$data_preferida = limpar_dado($conexao, $_POST['data_preferida'] ?? NULL);
+$data_de_agendamento = limpar_dado($conexao, $_POST['data_preferida'] ?? NULL);
 $motivo_consulta = limpar_dado($conexao, $_POST['motivo_consulta'] ?? '');
 $autorizacao_lgpd = isset($_POST['autorizacao_lgpd']) ? 1 : 0;
 
 // Prepara a query
 $sql = "INSERT INTO agendamentos 
-    (nome_tutor, telefone_whatsapp, email, nome_pet, especie, raca_porte, sexo, idade_data_nascimento, data_preferida, motivo_consulta, autorizacao_lgpd) 
+    (nome_tutor, telefone_whatsapp, email, nome_pet, especie, raca_porte, sexo, idade_data_nascimento, data_de_agendamento, motivo_consulta, autorizacao_lgpd) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_prepare($conexao, $sql);
@@ -38,7 +38,7 @@ if ($stmt) {
         $raca_porte, 
         $sexo, 
         $idade_data_nascimento, 
-        $data_preferida, 
+        $data_de_agendamento, 
         $motivo_consulta, 
         $autorizacao_lgpd
     );

@@ -11,7 +11,7 @@ require 'conexao.php';
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <form action="agendamento.php" method="POST"></head>
-<body class="main-container">
+<body style= "background-color: #333; align-items: center">
     
     <div class="container">
       <img src="./imagens/JOGIKA.png" alt="Logo Jogika" width="150">
