@@ -1,7 +1,6 @@
 <?php
 session_start();
-require 'conexao.php'
-require 'processaagendamento.php'
+require 'conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,28 +13,28 @@ require 'processaagendamento.php'
 <body>
     <section id="AgendeumaConsulta">
         <h2>Agende uma Consulta</h2>
-        <form id="contatoForm">
+        <form id="contatoForm" action="processaagendamento.php" method="POST">
             <h3>Dados do Tutor</h3>
             <label for="nome">Nome Completo do Tutor:</label>
-            <input type="text" id="nomePet" name="nomePet" required>
+            <input type="text" id="nomeTutor" name="nome_tutor" required>
 
             <label for="telefone">Telefone/WhatsApp:</label>
-            <input type="text" id="telefone" name="telefone" required>
+            <input type="text" id="telefoneWhatsapp" name="telefone_whatsapp" required>
             
             <label for="email">Email:</label>
-            <input type="text" id="Email" name="Email" required>
+            <input type="text" id="Email" name="email" required>
 
             <br><br>
             <h3>Dados do Pet</h3>
             <br>
             <label for="nome">Nome do Pet:</label>
-            <input type="text" id="nomePet" name="nomePet" required>
+            <input type="text" id="nomePet" name="nome_pet" required>
 
             <label for="especie">Espécie:</label>
-            <input type="text" id="especie"  value="cão/gato/coelho..."  name="especie" required>
+            <input type="text" id="Especie"  value="cão/gato/coelho..."  name="especie" required>
             
             <label for="raça">Raça/Porte:</label>
-            <input type="text" id="raça" name="raça" required>
+            <input type="text" id="racaPorte" name="raca_porte" required>
             
             <label for="sexo">Sexo:</label>
             <select name="sexo">
@@ -46,24 +45,23 @@ require 'processaagendamento.php'
             <br>
 
             <label for="idade">Idade/Data de Nascimento:</label>
-            <input type="number" id="idade" name="idade"  required>
+            <input type="number" id="idadeDataNascimento" name="idade_data_nascimento"  required>
 
             <label for="idade">Data da Consulta:</label>
-            <input type="datetime-local" name="data_preferida">
+            <input type="datetime-local" id="dataPreferida" name="data_preferida">
 
             <br><br>
             <h3>Motivo da Consulta</h3>
-            <textarea name="motivo" placeholder="Vacina, sintoma..." required></textarea>
+            <textarea id="motivoConsulta" name="motivo_consulta" placeholder="Vacina, sintoma..." required></textarea>
             
             <br><br>
               <label>
-                <input type="checkbox" required>
+                <input type="checkbox" name="autorizacao_lgpd" required>
                 Autorizo o uso dos meus dados para fins de agendamento (LGPD).
               </label>
-            
-            <button type="submit">Agendar</button>
+            <input type="submit" value="Agendar" >Agendar</input>
             <p id="mensagemSucesso" style="display: none; color: green;">Agendamento realizado com sucesso!</p>
-        </form>
+       </form>
     </section>
   </body>
 </html>

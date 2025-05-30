@@ -11,9 +11,10 @@ require 'conexao.php';
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <form action="agendamento.php" method="POST"></head>
-<body>
+<body class="main-container">
+    
     <div class="container">
-      <img src="/Clinica_Veterinária/imagens/JOGIKA.png" alt="Logo Jogika" width="150">
+      <img src="./imagens/JOGIKA.png" alt="Logo Jogika" width="150">
       <p>Cuidando com amor do seu pet!</p>
     </div>
 
@@ -37,10 +38,10 @@ require 'conexao.php';
     <section id="sobre">
         <div class="carousel">
             <button id="prev">&lt;</button>
-            <img src="/Clinica_Veterinária/imagens/Slide-clinica.png" class="active" alt="Imagem da clínica 1">
-            <img src="/Clinica_Veterinária/imagens/servico1.avif" alt="Imagem da clínica 2">
-            <img src="/Clinica_Veterinária/imagens/servico2.avif" alt="Imagem da clínica 3">
-            <img src="/Clinica_Veterinária/imagens/servico3.jpg" alt="Imagem da clínica 4">
+            <img src="./imagens/Slide-clinica.png" class="active" alt="Imagem da clínica 1">
+            <img src="./imagens/servico1.avif" alt="Imagem da clínica 2">
+            <img src="./imagens/servico2.avif" alt="Imagem da clínica 3">
+            <img src="./imagens/servico3.jpg" alt="Imagem da clínica 4">
             <button id="next">&gt;</button>
         </div>
         <br><br>
@@ -90,19 +91,19 @@ require 'conexao.php';
         <h2>Nossa Equipe</h2>
             <div class="container">
                 <div class="medico">
-                    <img src="/Clinica_Veterinária/imagens/Anapet.png" alt="Dra. Ana Pet" class="img-pequena"> 
+                    <img src="./imagens/Anapet.png" alt="Dra. Ana Pet" class="img-pequena"> 
                     <p><strong>Dra. Ana Pet</strong> - Especialista em Pequenos Animais</p>
                 </div>
                 <div class="medico">
-                    <img src="/Clinica_Veterinária/imagens/Carlos Bicho.png" alt="Dr. Carlos Bicho" class="img-pequena">
+                    <img src="./imagens/Carlos Bicho.png" alt="Dr. Carlos Bicho" class="img-pequena">
                     <p><strong>Dr. Carlos Bicho</strong> - Cirurgião Veterinário</p>
                 </div>
                 <div class="medico">
-                    <img src="/Clinica_Veterinária/imagens/Flora Fauna.png" alt="Dra. Flora Fauna" class="img-pequena">
+                    <img src="./imagens/Flora Fauna.png" alt="Dra. Flora Fauna" class="img-pequena">
                     <p><strong>Dra. Flora Fauna</strong> - Veterinária de Animais Silvestres</p>
                 </div>
                 <div class="medico">
-                    <img src="/Clinica_Veterinária/imagens/José Bizerro.png" alt="Dra. Flora Fauna" class="img-pequena">
+                    <img src="./imagens/José Bizerro.png" alt="Dra. Flora Fauna" class="img-pequena">
                     <p><strong>Dra. José Bizerro</strong> - Veterinária de Animais Silvestres</p>
                 </div>
             </div>
