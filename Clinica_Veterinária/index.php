@@ -10,7 +10,7 @@ require 'conexao.php';
     <title>Clínica Veterinária JOGIKA</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <form action="agendamento.php" method="POST"></head>
+</head>
 <body>
     <div class="container">
     <div class="container-header">
@@ -31,11 +31,11 @@ require 'conexao.php';
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#equipe">Equipe</a></li>
-            <li><a href="agendamento.php">Agende uma Consulta</a></li>
+            <li><a href="agendamento.php" target="_blank">Agende uma Consulta</a></li>
         </ul>
     </nav>
 
-    <section id="sobre">
+    <section id="imagens">
         <div class="carousel">
             <button id="prev">&lt;</button>
             <img src="./imagens/Slide-clinica.png" class="active" alt="Imagem da clínica 1">
@@ -44,7 +44,9 @@ require 'conexao.php';
             <img src="./imagens/servico3.jpg" alt="Imagem da clínica 4">
             <button id="next">&gt;</button>
         </div>
-        <br><br>
+        <br>
+    </section>
+    <section id="sobre">
         <h2>Sobre a Clínica</h2>
         <p>Fundada em 2015, a Clínica Veterinária JOGIKA nasceu com o propósito de oferecer um atendimento veterinário humanizado, acessível e de alta qualidade. Desde então, temos cuidado de centenas de pets com carinho, respeito e profissionalismo, sempre priorizando o bem-estar dos animais e a tranquilidade de seus tutores.
         <br><br>

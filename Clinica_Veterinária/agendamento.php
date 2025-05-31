@@ -12,7 +12,7 @@ require 'conexao.php';
 </head>
 <body>
     <section id="AgendeumaConsulta">
-        <h2>Agende uma Consulta</h2>
+        <h2><center>Agende uma Consulta</center></h2>
         <div class="formbox">
         <form id="contatoForm" action="processaagendamento.php" method="POST">
             <h3>Dados do Tutor</h3>
@@ -27,12 +27,11 @@ require 'conexao.php';
 
             <br><br>
             <h3>Dados do Pet</h3>
-            <br>
             <label for="nome">Nome do Pet:</label>
             <input type="text" id="nomePet" name="nome_pet" required>
             <br>
             <label for="especie">Espécie:</label>
-            <input type="text" id="Especie"  value="cão/gato/coelho..."  name="especie" required>
+            <input type="text" id="Especie"  placeholder="cão/gato/coelho..."  name="especie" required>
             <br>
             <label for="raça">Raça/Porte:</label>
             <input type="text" id="racaPorte" name="raca_porte" required>
@@ -41,27 +40,25 @@ require 'conexao.php';
             <select name="sexo">
             <option value="M">Macho</option>
             <option value="F">Fêmea</option>
-            <option value="Outro">Outro</option>
             </select>
             <br>
-
-            <label for="idade">Idade/Data de Nascimento:</label>
+            <label for="idade">Idade:</label>
             <input type="number" id="idadeDataNascimento" name="idade_data_nascimento"  required>
             <br>
             <label for="idade">Data da Consulta:</label>
             <input type="datetime-local" id="dataPreferida" name="data_preferida">
-
-            <br><br>
+            <br>
             <h3>Motivo da Consulta</h3>
             <textarea id="motivoConsulta" name="motivo_consulta" placeholder="Vacina, sintoma..." required></textarea>
-            
             <br><br>
-              <label>
+            <div class="lgpdcheck">
+              <label class="checkbox-container">
                 <input type="checkbox" name="autorizacao_lgpd" required>
-                Autorizo o uso dos meus dados para fins de agendamento (LGPD).
+                <span>Autorizo o uso dos meus dados para fins de agendamento (LGPD).</span>
               </label>
-              <br>
-            <input type="submit" value="Agendar" >Agendar</input>
+            </div>
+            <br>
+            <button type="submit" value="Agendar">Agendar</button>
             <p id="mensagemSucesso" style="display: none; color: green;">Agendamento realizado com sucesso!</p>
        </form>
       </div>
