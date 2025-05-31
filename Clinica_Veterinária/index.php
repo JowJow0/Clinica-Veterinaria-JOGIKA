@@ -11,21 +11,21 @@ require 'conexao.php';
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <form action="agendamento.php" method="POST"></head>
-<body style= "background-color: #333; align-items: center">
-    
+<body>
     <div class="container">
+    <div class="container-header">
       <img src="./imagens/JOGIKA.png" alt="Logo Jogika" width="150">
-      <p>Cuidando com amor do seu pet!</p>
+ 
     </div>
-
-    <div class="direita">
+    <div class="container-contato">
       <h2>Contato</h2>
       <p><b>Endereço:</b> Rua dos Animais, 456 – Centro, SP</p>
       <p><b>Telefone:</b> (11) 99876-5432</p>
       <p><b>Email:</b> contato@jogikaveterinaria.com</p>
     </div>
-  </div> 
-
+    </div>
+  
+    
     <nav class="menu">
         <ul>
             <li><a href="#sobre">Sobre</a></li>
@@ -89,7 +89,7 @@ require 'conexao.php';
 
     <section id="equipe">
         <h2>Nossa Equipe</h2>
-            <div class="container">
+            <div class="container-medicos">
                 <div class="medico">
                     <img src="./imagens/Anapet.png" alt="Dra. Ana Pet" class="img-pequena"> 
                     <p><strong>Dra. Ana Pet</strong> - Especialista em Pequenos Animais</p>
@@ -117,5 +117,6 @@ require 'conexao.php';
     <button id="btnTopo">&#8679;</button>
 
     <script src="script.js"></script>
+
 </body>
 </html>
